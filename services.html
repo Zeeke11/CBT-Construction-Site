@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verified Services | CBT Construction - Roofing, Concrete, Decks & Remodeling</title>
+  <meta name="description" content="Explore verified contracting services from CBT Construction & Justin Fry. Specializing in asphalt & metal roofing, concrete flatwork, custom decks, and home room additions in Vandalia, Cowden, and Effingham, IL.">
+  <meta name="keywords" content="roofing replacement Vandalia IL, metal roof Effingham, stamped concrete Cowden, deck builder Shelbyville, home additions Central IL, CBT Construction services">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              charcoal: '#0f172a',
+              slate: '#1e293b',
+              muted: '#334155',
+              amber: '#f59e0b',
+              amberDark: '#d97706',
+              orange: '#ea580c',
+              lightBg: '#f8fafc',
+            }
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950 min-h-screen flex flex-col">
+
+  <!-- Top Emergency & Direct Dispatch Bar -->
+  <aside class="bg-amber-500 text-slate-950 text-xs font-bold py-2 px-4 shadow-sm" aria-label="Announcement Bar">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] uppercase tracking-wider bg-slate-950 text-amber-400 font-extrabold animate-pulse">
+          ⚡ Free Estimates
+        </span>
+        <span>Licensed, Bonded & Insured Central Illinois General Contractor</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="hidden md:inline text-slate-900/80">Owner: Justin Fry</span>
+        <a href="tel:+12172543091" class="inline-flex items-center gap-1.5 underline hover:text-slate-800 transition">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+          </svg>
+          Direct Line: (217) 254-3091
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header Navigation -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-slate-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group" title="CBT Construction Home">
+        <img src="assets/images/logo.svg" alt="CBT Construction Logo" class="h-12 w-auto transition-transform duration-300 group-hover:scale-105">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold tracking-wide">
+        <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
+        <a href="services.html" class="text-amber-400 border-b-2 border-amber-400 pb-1 font-bold">Verified Services</a>
+        <a href="gallery.html" class="text-slate-300 hover:text-white transition">Project Gallery</a>
+        <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact & Estimate</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="tel:+12172543091" class="flex items-center gap-2 text-right group">
+          <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-slate-950 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold">Justin Fry Direct</div>
+            <div class="text-sm font-bold text-white tracking-wide">(217) 254-3091</div>
+          </div>
+        </a>
+
+        <button class="open-estimate-modal bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm px-5 py-2.5 rounded-xl shadow-lg hover:shadow-amber-500/20 transition-all flex items-center gap-2 cursor-pointer">
+          <span>Free Estimate</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </button>
+      </div>
+
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg bg-slate-800 text-slate-200 hover:text-white" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer-overlay" class="fixed inset-0 bg-slate-950/80 z-50 hidden transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-slate-900 z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out p-6 flex flex-col justify-between border-l border-slate-800">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+        <span class="font-heading font-black text-lg text-white">CBT <span class="text-amber-400">CONSTRUCTION</span></span>
+        <button id="mobile-menu-close" class="p-2 rounded-lg bg-slate-800 text-slate-400 hover:text-white" aria-label="Close menu">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav class="mt-6 flex flex-col gap-4 text-base font-semibold">
+        <a href="index.html" class="text-slate-300 hover:text-white py-2 border-b border-slate-800">Home</a>
+        <a href="services.html" class="text-amber-400 py-2 border-b border-slate-800">Verified Services</a>
+        <a href="gallery.html" class="text-slate-300 hover:text-white py-2 border-b border-slate-800">Project Gallery</a>
+        <a href="contact.html" class="text-slate-300 hover:text-white py-2 border-b border-slate-800">Contact & Estimate</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-slate-800 space-y-4">
+      <a href="tel:+12172543091" class="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-4 rounded-xl text-sm transition">
+        <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+        </svg>
+        Call: (217) 254-3091
+      </a>
+      <button class="open-estimate-modal w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold py-3 px-4 rounded-xl text-sm shadow-lg transition">
+        Request Free Estimate
+      </button>
+    </div>
+  </div>
+
+  <main class="flex-grow">
+    <!-- Page Header & Breadcrumb -->
+    <section class="bg-slate-950 border-b border-slate-800 py-16 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Breadcrumb -->
+        <nav class="flex items-center gap-2 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-amber-400 transition">Home</a>
+          <span>/</span>
+          <span class="text-amber-400 font-semibold">Services</span>
+        </nav>
+        <div class="max-w-3xl">
+          <h1 class="text-3xl sm:text-5xl font-black text-white font-heading tracking-tight">
+            Verified Contracting Services
+          </h1>
+          <p class="text-slate-300 text-base sm:text-lg mt-4 leading-relaxed">
+            Every project undertaken by CBT Construction follows strict structural integrity guidelines, code compliance, and direct supervision by Justin Fry. We build for endurance in Central Illinois.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Jump Navigation Pills -->
+    <nav class="sticky top-20 z-30 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 py-3">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-3 overflow-x-auto text-xs font-bold whitespace-nowrap">
+        <span class="text-slate-400 uppercase tracking-wider text-[11px]">Jump To:</span>
+        <a href="#roofing" class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-slate-200 transition">Roofing & Storm Repairs</a>
+        <a href="#concrete" class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-slate-200 transition">Concrete & Stamped Masonry</a>
+        <a href="#decks" class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-slate-200 transition">Custom Decks & Outdoor Living</a>
+        <a href="#additions" class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-slate-200 transition">Additions & Wood-Look Tile</a>
+      </div>
+    </nav>
+
+    <!-- 1. ROOFING SERVICES -->
+    <section id="roofing" class="py-20 border-b border-slate-800 bg-slate-900 scroll-mt-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-widest">
+              Roofing Systems & Repairs
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-white font-heading">
+              Asphalt Shingle & Metal Roofing in Central IL
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Your roof is your home’s first defense against hail, high prairie winds, and winter ice dams. CBT Construction installs complete engineered roofing systems engineered for 50+ year lifespans.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Architectural Asphalt Shingle Replacement
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Full tear-offs down to clean decking, replacement of rotten sheathing, installation of ice & water shield in all valleys and eaves, and premium high-wind architectural shingles (GAF, Owens Corning).
+                </p>
+              </div>
+
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Standing Seam & Ribbed Metal Roofs
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Concealed and exposed fastener residential metal roofing with lifetime durability, energy-saving reflective finishes, and maximum fire/wind resistance.
+                </p>
+              </div>
+
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Rapid Leak Repairs & Emergency Storm Response
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  24/7 tarping and targeted repairs for chimney flashings, skylights, pipe collars, and wind-torn shingle sections.
+                </p>
+              </div>
+
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Storm Damage Inspections & Gutter Guards
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Thorough hail and wind inspection reports for insurance claims, paired with micro-mesh gutter guard systems that prevent debris buildup.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+              <button class="open-estimate-modal bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-6 py-3.5 rounded-xl text-sm transition shadow-lg flex items-center justify-center gap-2" data-service="Roofing Repair/Replacement">
+                <span>Request Roofing Estimate</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+              <a href="tel:+12172543091" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-3.5 rounded-xl text-sm border border-slate-700 transition flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span>Call Justin: (217) 254-3091</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual Column -->
+          <div class="lg:col-span-6 space-y-4">
+            <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-2xl relative">
+              <img src="assets/images/metal-roofing.jpg" alt="Metal Roofing Installation by CBT Construction" class="w-full h-80 object-cover">
+              <div class="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg text-xs font-semibold text-white border border-slate-700">
+                Standing Seam Metal Roofing • Built to Last
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="rounded-xl overflow-hidden border border-slate-700 relative">
+                <img src="assets/images/hero-roofing.jpg" alt="Architectural Shingles" class="w-full h-44 object-cover">
+                <span class="absolute bottom-2 left-2 text-[11px] bg-slate-900/90 text-amber-400 px-2 py-0.5 rounded font-bold">Architectural Shingles</span>
+              </div>
+              <div class="rounded-xl overflow-hidden border border-slate-700 relative">
+                <img src="assets/images/roof-inspection.jpg" alt="Roof Storm Damage Inspection" class="w-full h-44 object-cover">
+                <span class="absolute bottom-2 left-2 text-[11px] bg-slate-900/90 text-amber-400 px-2 py-0.5 rounded font-bold">Storm Inspections</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CONCRETE & MASONRY SERVICES -->
+    <section id="concrete" class="py-20 border-b border-slate-800 bg-slate-950 scroll-mt-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Visual Column -->
+          <div class="lg:col-span-6 space-y-4 order-2 lg:order-1">
+            <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-2xl relative">
+              <img src="assets/images/concrete-patio.jpg" alt="Decorative Stamped Concrete Patio by CBT Construction" class="w-full h-80 object-cover">
+              <div class="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg text-xs font-semibold text-white border border-slate-700">
+                Decorative Stamped & Colored Patio in Central IL
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden border border-slate-700 relative">
+              <img src="assets/images/concrete-driveway.jpg" alt="Poured Concrete Driveway" class="w-full h-44 object-cover">
+              <span class="absolute bottom-2 left-2 text-[11px] bg-slate-900/90 text-amber-400 px-2 py-0.5 rounded font-bold">Broom-Finish Driveways & Approaches</span>
+            </div>
+          </div>
+
+          <!-- Text Column -->
+          <div class="lg:col-span-6 space-y-6 order-1 lg:order-2">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-widest">
+              Flatwork & Custom Masonry
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-white font-heading">
+              Concrete Pouring & Decorative Finishing
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              From heavy-duty garage pads and broom-finished driveways to stunning custom stamped patios with stone textures and rich integrated dyes.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Decorative Stamped Concrete
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Transform outdoor living spaces with natural stone, slate, and brick patterns. Sealed with UV-resistant sealers for vibrant lasting color.
+                </p>
+              </div>
+
+              <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Driveways, Walkways & Approaches
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Clean, slip-resistant broom finishes with tooled borders, calibrated expansion control joints, and proper slope for rainwater runoff.
+                </p>
+              </div>
+
+              <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Heavy-Duty Garage Slabs & Foundations
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  High-PSI concrete mixes with crushed gravel base compaction, vapor barrier, and welded wire mesh / fiber reinforcement.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+              <button class="open-estimate-modal bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-6 py-3.5 rounded-xl text-sm transition shadow-lg flex items-center justify-center gap-2" data-service="Concrete Pouring">
+                <span>Request Concrete Quote</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+              <button class="open-estimate-modal bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-3.5 rounded-xl text-sm border border-slate-700 transition" data-service="Decorative Stamped Concrete">
+                <span>Stamped Concrete Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CUSTOM DECKS & OUTDOOR LIVING -->
+    <section id="decks" class="py-20 border-b border-slate-800 bg-slate-900 scroll-mt-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-widest">
+              Outdoor Living Spaces
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-white font-heading">
+              Custom Deck Builds & Exterior Upgrades
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Expand your living room into the outdoors. CBT Construction engineers custom multi-tier decks built on solid concrete footings with premium composite or pressure-treated materials.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Composite Decking (Trex & TimberTech)
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Low-maintenance, splinter-free boards that resist fading, staining, and rot. Concealed fasteners for a clean, barefoot-friendly surface.
+                </p>
+              </div>
+
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Aluminum, Cable & Wood Railings
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Contemporary black powder-coated aluminum balusters, cable railings for clear sightlines, and sturdy wood handrails.
+                </p>
+              </div>
+
+              <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Covered Porches & Pergolas
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Screened-in porches, shade pergolas, and integrated low-voltage LED stair lighting for safety and evening entertaining.
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <button class="open-estimate-modal bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-6 py-3.5 rounded-xl text-sm transition shadow-lg flex items-center justify-center gap-2" data-service="Deck Building">
+                <span>Request Custom Deck Quote</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-2xl relative">
+              <img src="assets/images/custom-deck.jpg" alt="Custom Multi-Tier Deck Built by CBT Construction" class="w-full h-96 object-cover">
+              <div class="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg text-xs font-semibold text-white border border-slate-700">
+                Multi-Level Composite Deck with Aluminum Railings
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HOME ADDITIONS & WOOD-LOOK TILE REMODELING -->
+    <section id="additions" class="py-20 border-b border-slate-800 bg-slate-950 scroll-mt-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Visual Column -->
+          <div class="lg:col-span-6 space-y-4 order-2 lg:order-1">
+            <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-2xl relative">
+              <img src="assets/images/home-addition.jpg" alt="Home Addition Construction by CBT Construction" class="w-full h-80 object-cover">
+              <div class="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg text-xs font-semibold text-white border border-slate-700">
+                Seamless Room Addition & Exterior Integration
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden border border-slate-700 relative">
+              <img src="assets/images/tile-flooring.jpg" alt="Wood-Look Tile Flooring" class="w-full h-44 object-cover">
+              <span class="absolute bottom-2 left-2 text-[11px] bg-slate-900/90 text-amber-400 px-2 py-0.5 rounded font-bold">Wood-Look Tile Flooring Installation</span>
+            </div>
+          </div>
+
+          <!-- Text Column -->
+          <div class="lg:col-span-6 space-y-6 order-1 lg:order-2">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-widest">
+              Living Space Expansions
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-white font-heading">
+              Comprehensive Room Additions & Interior Remodeling
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Need extra square footage for a growing family or ready to modernize your interior? Justin Fry handles structural framing, foundation tying, roofline blending, and high-end tile flooring.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Master Suite & Room Additions
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Turnkey addition construction including excavation, foundation, load-bearing framing, roofline tie-in, energy-efficient windows, and siding.
+                </p>
+              </div>
+
+              <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Wood-Look Porcelain Tile Flooring
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Enjoy the warm aesthetics of hardwood combined with 100% waterproof porcelain durability. Ideal for high-traffic kitchens, living areas, and mudrooms.
+                </p>
+              </div>
+
+              <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                <h3 class="text-white font-bold text-sm flex items-center gap-2">
+                  <span class="text-amber-400 font-extrabold">✔</span> Interior Reconfiguration & Drywall Finishing
+                </h3>
+                <p class="text-slate-400 text-xs mt-1 leading-relaxed">
+                  Open-concept kitchen and living room wall removals with LVL beam placement, drywall hung and taped, and custom finish carpentry.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+              <button class="open-estimate-modal bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-6 py-3.5 rounded-xl text-sm transition shadow-lg flex items-center justify-center gap-2" data-service="Home Addition">
+                <span>Request Addition Quote</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+              <button class="open-estimate-modal bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-3.5 rounded-xl text-sm border border-slate-700 transition" data-service="Flooring/Remodeling">
+                <span>Tile & Remodel Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 4-Step Contractor Process -->
+    <section class="py-20 bg-slate-900 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
+            Our Working Standard
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-white font-heading">
+            The CBT Construction 4-Step Process
+          </h2>
+          <p class="text-slate-400 text-base mt-4">
+            From the initial phone call to the final nail sweep, here is how we ensure seamless delivery on every job.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 relative">
+            <div class="text-4xl font-black text-amber-400/30 mb-2 font-heading">01</div>
+            <h3 class="text-lg font-bold text-white mb-2">Free On-Site Inspection</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Justin visits your property in Vandalia, Cowden, or Effingham to inspect roof condition, measure concrete yardage, or evaluate framing scope.
+            </p>
+          </div>
+
+          <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 relative">
+            <div class="text-4xl font-black text-amber-400/30 mb-2 font-heading">02</div>
+            <h3 class="text-lg font-bold text-white mb-2">Clear Scope & Estimate</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              You receive a detailed written estimate with no hidden costs, clear material specs (brand, grade, PSI), and realistic target start dates.
+            </p>
+          </div>
+
+          <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 relative">
+            <div class="text-4xl font-black text-amber-400/30 mb-2 font-heading">03</div>
+            <h3 class="text-lg font-bold text-white mb-2">Hands-On Construction</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              Justin and crew arrive on time, protect your landscaping and property, and build strictly to building code and manufacturer standards.
+            </p>
+          </div>
+
+          <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 relative">
+            <div class="text-4xl font-black text-amber-400/30 mb-2 font-heading">04</div>
+            <h3 class="text-lg font-bold text-white mb-2">Walkthrough & Cleanup</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              We complete a double magnetic nail sweep, clean all job debris, and walk through the project with you to ensure 100% satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Frequently Asked Questions Accordion -->
+    <section class="py-20 bg-slate-950 border-b border-slate-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-black text-white font-heading">Frequently Asked Questions</h2>
+          <p class="text-slate-400 text-sm mt-2">Common questions from Central Illinois homeowners.</p>
+        </div>
+
+        <div class="space-y-4">
+          <details class="bg-slate-900 border border-slate-800 rounded-xl p-5 group [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex justify-between items-center font-bold text-white text-sm">
+              <span>Do you help with homeowner insurance claims for storm damage?</span>
+              <span class="text-amber-400 group-open:rotate-180 transition-transform duration-300">▼</span>
+            </summary>
+            <p class="text-slate-300 text-xs mt-3 leading-relaxed">
+              Yes, absolutely. Central Illinois experiences frequent severe storms with wind and hail. Justin Fry provides a thorough photo inspection report documenting lifted shingles, bruised granules, and gutter damage, and can meet your insurance adjuster on-site to verify proper claim compensation.
+            </p>
+          </details>
+
+          <details class="bg-slate-900 border border-slate-800 rounded-xl p-5 group [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex justify-between items-center font-bold text-white text-sm">
+              <span>How long does a typical roof replacement take?</span>
+              <span class="text-amber-400 group-open:rotate-180 transition-transform duration-300">▼</span>
+            </summary>
+            <p class="text-slate-300 text-xs mt-3 leading-relaxed">
+              Most residential single-family roofs in Vandalia and Cowden are completed in 1 to 2 days, weather permitting. We strip, inspect decking, apply ice barrier, and install new shingles efficiently while keeping your property clean.
+            </p>
+          </details>
+
+          <details class="bg-slate-900 border border-slate-800 rounded-xl p-5 group [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex justify-between items-center font-bold text-white text-sm">
+              <span>What is the difference between stamped concrete and regular concrete?</span>
+              <span class="text-amber-400 group-open:rotate-180 transition-transform duration-300">▼</span>
+            </summary>
+            <p class="text-slate-300 text-xs mt-3 leading-relaxed">
+              Regular concrete is typically finished with a brushed broom texture for traction (great for driveways and garage slabs). Stamped concrete is colored with integrated pigments and textured with pattern mats (slate, stone, cobblestone) to give the appearance of high-end natural stone at a fraction of the cost.
+            </p>
+          </details>
+
+          <details class="bg-slate-900 border border-slate-800 rounded-xl p-5 group [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex justify-between items-center font-bold text-white text-sm">
+              <span>Are you licensed, bonded, and insured?</span>
+              <span class="text-amber-400 group-open:rotate-180 transition-transform duration-300">▼</span>
+            </summary>
+            <p class="text-slate-300 text-xs mt-3 leading-relaxed">
+              Yes. CBT Construction is fully licensed, bonded, and carries general liability and workers' compensation coverage to protect homeowners across Fayette, Effingham, and Shelby counties.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Bar -->
+    <section class="py-16 bg-amber-500 text-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+        <h2 class="text-3xl sm:text-4xl font-black font-heading tracking-tight">
+          Have Questions About Your Upcoming Project?
+        </h2>
+        <p class="text-slate-950/90 text-base max-w-2xl mx-auto font-medium">
+          Call Justin Fry directly at (217) 254-3091 or request a fast on-site estimate today.
+        </p>
+        <div class="pt-2">
+          <button class="open-estimate-modal bg-slate-950 hover:bg-slate-900 text-amber-400 font-extrabold px-8 py-4 rounded-xl text-base shadow-2xl transition cursor-pointer">
+            Request Free Estimate
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        <div class="space-y-4">
+          <img src="assets/images/logo.svg" alt="CBT Construction" class="h-11 w-auto">
+          <p class="text-xs text-slate-400 leading-relaxed">
+            CBT Construction is owned & operated by Justin Fry. Serving Cowden, Vandalia, Effingham, and Central Illinois.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-amber-400 transition" aria-label="Facebook Profile">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <span class="text-xs text-slate-400">Official Facebook Page</span>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-white font-bold font-heading text-sm uppercase tracking-wider">Services</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#roofing" class="hover:text-amber-400 transition">Asphalt Shingle Roofing</a></li>
+            <li><a href="#roofing" class="hover:text-amber-400 transition">Metal Roofing Systems</a></li>
+            <li><a href="#concrete" class="hover:text-amber-400 transition">Poured Concrete Flatwork</a></li>
+            <li><a href="#concrete" class="hover:text-amber-400 transition">Decorative Stamped Concrete</a></li>
+            <li><a href="#decks" class="hover:text-amber-400 transition">Custom Composite Decks</a></li>
+            <li><a href="#additions" class="hover:text-amber-400 transition">Home Additions & Remodels</a></li>
+            <li><a href="#additions" class="hover:text-amber-400 transition">Wood-Look Tile Flooring</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-white font-bold font-heading text-sm uppercase tracking-wider">Navigation</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-amber-400 transition">Home</a></li>
+            <li><a href="services.html" class="hover:text-amber-400 transition">Services Breakdown</a></li>
+            <li><a href="gallery.html" class="hover:text-amber-400 transition">Facebook Project Gallery</a></li>
+            <li><a href="contact.html" class="hover:text-amber-400 transition">Contact & Estimate</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-white font-bold font-heading text-sm uppercase tracking-wider">Contractor Details</h4>
+          <div class="text-xs space-y-2">
+            <div class="font-bold text-white">Justin Fry • CBT Construction</div>
+            <div>Phone: <a href="tel:+12172543091" class="text-amber-400 font-bold">(217) 254-3091</a></div>
+            <div>3125 N 1800 St, Cowden, IL 62422</div>
+            <div class="pt-2 text-slate-400">
+              <div>Mon – Fri: 8:00 AM – 6:00 PM</div>
+              <div>Saturday: By Appointment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 text-center text-xs text-slate-500">
+        © 2026 CBT Construction. All Rights Reserved. Licensed, Bonded & Insured.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Modal Included -->
+  <div id="estimate-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md">
+    <div class="bg-slate-900 border border-amber-500/40 rounded-2xl p-6 sm:p-8 max-w-xl w-full shadow-2xl relative max-h-[92vh] overflow-y-auto">
+      <button class="close-estimate-modal absolute top-5 right-5 text-slate-400 hover:text-white p-1 rounded-lg bg-slate-800" aria-label="Close modal">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <div class="mb-5 pb-4 border-b border-slate-800">
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">CBT Construction • Justin Fry</span>
+        <h3 class="text-2xl font-black text-white font-heading mt-1">Request Free On-Site Estimate</h3>
+        <p class="text-slate-400 text-xs mt-1">Serving Vandalia, Cowden, Effingham & surrounding Central IL communities.</p>
+      </div>
+
+      <form class="cbt-quote-form space-y-4" action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="hidden" name="_source" value="Services Page Modal">
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Your Full Name *</label>
+          <input type="text" name="full_name" required placeholder="John Miller" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-slate-500 transition">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Phone Number *</label>
+            <input type="tel" name="phone_number" required placeholder="(217) 254-3091" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-slate-500 transition">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Email Address</label>
+            <input type="email" name="email_address" placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-slate-500 transition">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Property Location / Town *</label>
+          <input type="text" name="property_address" required placeholder="e.g., Vandalia, Cowden, Effingham, Shelbyville, Altamont" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-slate-500 transition">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Service Category *</label>
+            <select name="service_category" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white transition">
+              <option value="" disabled selected>Select service category...</option>
+              <option value="Roofing Repair/Replacement">Roofing: Shingle / Metal Replacement</option>
+              <option value="Storm Damage / Leak Repair">Roofing: Storm Damage / Leak Repair</option>
+              <option value="Concrete Pouring">Concrete: Poured Driveway / Patio / Slab</option>
+              <option value="Decorative Stamped Concrete">Concrete: Decorative Stamped & Colored</option>
+              <option value="Deck Building">Outdoor Living: Custom Deck Construction</option>
+              <option value="Home Addition">Home Additions & Remodeling</option>
+              <option value="Flooring/Remodeling">Tile Flooring & Interior Renovation</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Timeline / Urgency</label>
+            <select name="timeline" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white transition">
+              <option value="Emergency (Storm / Active Leak)">🚨 Emergency / Active Leak (24-48 hrs)</option>
+              <option value="Within 1-2 Weeks">Within 1-2 Weeks</option>
+              <option value="Next 1-2 Months" selected>Next 1-2 Months</option>
+              <option value="Planning / Flexible">Planning / Flexible</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">Project Details / Description</label>
+          <textarea name="project_details" rows="3" placeholder="Tell Justin about square footage, roof pitch, concrete dimensions, or timeline..." class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-slate-500 transition"></textarea>
+        </div>
+
+        <div class="pt-2 flex flex-col gap-2">
+          <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-black py-3 px-4 rounded-xl text-sm transition shadow-lg flex items-center justify-center gap-2">
+            <span>Send Request to Justin Fry</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button>
+          <button type="button" class="btn-send-sms w-full bg-slate-950 hover:bg-slate-800 text-slate-300 hover:text-white font-semibold py-2.5 px-3 rounded-lg text-xs border border-slate-700 transition flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+            <span>Send Request via Phone Text (SMS)</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

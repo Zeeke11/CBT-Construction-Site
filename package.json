@@ -1,0 +1,20 @@
+{
+  "name": "cbt-construction-site",
+  "version": "1.0.0",
+  "description": "High-converting multi-page website for CBT Construction (Justin Fry) serving Vandalia, Cowden, Effingham, and Central Illinois.",
+  "scripts": {
+    "dev": "npx serve -l 3000 .",
+    "start": "npx serve -l 3000 .",
+    "build": "echo 'Static multi-page build ready for Vercel deployment'"
+  },
+  "keywords": [
+    "cbt-construction",
+    "justin-fry",
+    "roofing-contractor",
+    "vandalia-il",
+    "effingham-il",
+    "cowden-il"
+  ],
+  "author": "CBT Construction",
+  "license": "ISC"
+}

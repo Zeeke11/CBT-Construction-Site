@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 70" width="380" height="70" fill="none">
+  <!-- Brand Icon Badge -->
+  <g transform="translate(5, 5)">
+    <!-- Roof truss & foundation hexagon / chevron -->
+    <rect x="0" y="0" width="60" height="60" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <path d="M12 40 L30 16 L48 40 Z" stroke="#f59e0b" stroke-width="4" stroke-linejoin="round" fill="none" />
+    <path d="M22 40 L30 28 L38 40 Z" fill="#f59e0b" />
+    <line x1="16" y1="46" x2="44" y2="46" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <circle cx="30" cy="16" r="3" fill="#ffffff" />
+  </g>
+  
+  <!-- Brand Text -->
+  <g transform="translate(76, 15)">
+    <text x="0" y="25" font-family="'Montserrat', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="28" fill="#ffffff" letter-spacing="0.5">CBT</text>
+    <text x="70" y="25" font-family="'Montserrat', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="21" fill="#f59e0b" letter-spacing="1">CONSTRUCTION</text>
+    <text x="0" y="43" font-family="'Inter', -apple-system, sans-serif" font-weight="600" font-size="9.5" fill="#94a3b8" letter-spacing="2">ROOFING • CONCRETE • REMODELING</text>
+  </g>
+</svg>
