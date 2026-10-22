@@ -21,35 +21,38 @@ The site is built as a lightning-fast, 4-page responsive web experience:
 
 | Page | File | Description & Key Conversion Features |
 | :--- | :--- | :--- |
-| **Home** | [`index.html`](index.html) | High-impact hero with value proposition (*"Licensed, Bonded, & Insured Construction & Roofing Services in Vandalia & Central IL"*), quick-stats banner (15+ years experience, 5.0★ rating, 100+ projects), embedded quote card, verified services grid, interactive before/after slider, authentic local reviews, and service coverage area. |
-| **Services** | [`services.html`](services.html) | In-depth breakdown of verified services (shingle & metal roofing, concrete flatwork & stamped masonry, custom decks, room additions & wood-look tile flooring) with material specs, 4-step contractor quality process, and FAQ accordion. |
-| **Project Gallery** | [`gallery.html`](gallery.html) | Interactive filterable project gallery (All, Roofing, Concrete, Decks, Additions & Flooring) showcasing real job work sourced from CBT Construction's active projects, accompanied by a fullscreen Lightbox modal with next/prev controls, keyboard navigation, and instant quote triggers. |
-| **Contact & Estimate** | [`contact.html`](contact.html) | Justin Fry direct contact details, operating hours (Mon–Fri 8:00 AM – 6:00 PM, 24/7 emergency storm response), detailed county-by-county service coverage list, and a robust interactive quote request form. |
+| **Home** | [`index.html`](index.html) | High-impact hero featuring authentic CBT luxury custom build, quick-stats banner (15+ years experience, 5.0★ rating, 100+ projects), embedded quote card, verified services grid, interactive before/after roof slider, authentic local reviews, and full Facebook spotlight on Justin Fry's tear-down rebuilds. |
+| **Services** | [`services.html`](services.html) | In-depth breakdown of CBT's real specializations (Architectural & metal roofing, ground-up new home construction & structural framing, custom composite/wood decks, vinyl siding & seamless gutters, and interior remodeling) with material specs, 4-step quality process, and FAQ accordion. |
+| **Project Gallery** | [`gallery.html`](gallery.html) | Interactive filterable project gallery (All, Roofing, New Construction, Custom Decks, Siding & Garages, Interior Remodeling) showcasing 21 authentic projects directly from CBT Construction's Facebook page, accompanied by a fullscreen Lightbox modal with next/prev controls, keyboard navigation, and instant quote triggers. |
+| **Contact & Estimate** | [`contact.html`](contact.html) | Justin Fry direct contact details, operating hours (Mon–Fri 8:00 AM – 6:00 PM, 24/7 emergency storm response), detailed county-by-county service coverage list, official Facebook link, and a robust interactive quote request form. |
 
 ---
 
 ## 🔨 3. Verified Service Offerings & Scope
 
 1. **Roofing Systems:**
-   * Asphalt architectural shingle installation & complete tear-off replacement (GAF, Owens Corning).
-   * Standing seam and ribbed residential/commercial metal roofing.
-   * Emergency leak detection, rapid storm tarping, and flashing repairs.
+   * Asphalt architectural shingle installation & complete tear-off replacement.
+   * Standing seam and ribbed residential/agricultural metal roofing.
+   * Continuous ridge vent cut & installations, emergency leak detection, rapid storm tarping, and flashing repairs.
    * Comprehensive hail and wind storm damage inspections with insurance claim documentation.
-   * Micro-mesh seamless gutter guard installations.
 
-2. **Concrete & Masonry:**
-   * Precision concrete pouring & finishing (driveways, walkways, garage pads, foundation slabs).
-   * High-end decorative stamped concrete (slate, cobblestone, seamless stone textures) with integrated earth-tone color washes and UV sealers.
+2. **New Home Construction & Structural Framing:**
+   * Ground-up turnkey residential builds (e.g. Ricky Schopp custom residence in Effingham).
+   * Structural framing, timber-framed entry porticos, gable rooflines, and stone wainscoting facades.
+   * Complete tear-down and rebuild transformations.
 
 3. **Outdoor Living & Custom Decks:**
-   * Custom composite decks (Trex, TimberTech) and pressure-treated timber.
-   * Multi-level configurations, built-in LED stair lighting, and black powder-coated aluminum baluster railings.
-   * Covered porches and pergolas.
+   * High-end multi-tier composite decks (Trex) with black aluminum balusters, picture-framed fascia, and custom stairways.
+   * Heavy-duty pressure-treated natural timber decks and lakeside walkouts.
 
-4. **Home Additions & Remodeling:**
-   * Comprehensive room additions (master suites, sunrooms, living room expansions).
-   * Structural framing, roofline integration, siding, and drywall finishing.
-   * Specialty flooring installations, focusing on ultra-durable **wood-look porcelain tile flooring**.
+4. **Siding, Garages & Gutters:**
+   * Premium horizontal lap vinyl siding installations on homes and detached garages.
+   * Seamless aluminum K-style gutters with downspouts and snow guard roof protection.
+
+5. **Interior Remodeling & Finishing:**
+   * Handcrafted distressed brick veneer dining room accent walls.
+   * Basement framing, drywall finishing, insulation, and moisture barriers.
+   * Interior solid-core pre-hung doors, casings, and trim carpentry.
 
 ---
 
