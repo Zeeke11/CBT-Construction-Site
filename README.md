@@ -21,33 +21,33 @@ The site is built as a lightning-fast, 4-page responsive web experience:
 
 | Page | File | Description & Key Conversion Features |
 | :--- | :--- | :--- |
-| **Home** | [`index.html`](index.html) | High-impact hero featuring authentic CBT luxury custom build, quick-stats banner (15+ years experience, 5.0★ rating, 100+ projects), embedded quote card, verified services grid, interactive before/after roof slider, authentic local reviews, and full Facebook spotlight on Justin Fry's tear-down rebuilds. |
-| **Services** | [`services.html`](services.html) | In-depth breakdown of CBT's real specializations (Architectural & metal roofing, ground-up new home construction & structural framing, custom composite/wood decks, vinyl siding & seamless gutters, and interior remodeling) with material specs, 4-step quality process, and FAQ accordion. |
-| **Project Gallery** | [`gallery.html`](gallery.html) | Interactive filterable project gallery (All, Roofing, New Construction, Custom Decks, Siding & Garages, Interior Remodeling) showcasing 21 authentic projects directly from CBT Construction's Facebook page, accompanied by a fullscreen Lightbox modal with next/prev controls, keyboard navigation, and instant quote triggers. |
-| **Contact & Estimate** | [`contact.html`](contact.html) | Justin Fry direct contact details, operating hours (Mon–Fri 8:00 AM – 6:00 PM, 24/7 emergency storm response), detailed county-by-county service coverage list, official Facebook link, and a robust interactive quote request form. |
+| **Home** | [`index.html`](index.html) | High-impact hero featuring authentic CBT luxury custom home builds, Commercial & Residential construction badge, quick-stats banner (15+ years experience, 5.0★ rating, 100+ projects), embedded quote card, verified services grid, seamless gutter & commercial highlight strip, interactive before/after roof slider, authentic local reviews, and full Facebook spotlight on Justin Fry's tear-down rebuilds. |
+| **Services** | [`services.html`](services.html) | In-depth breakdown of CBT's commercial and residential specializations (Turnkey custom home builds & structural framing, architectural & metal roofing, custom composite/wood decks, seamless aluminum gutters, leaf guards & vinyl siding, and interior remodeling) with material specs, 4-step quality process, and FAQ accordion. |
+| **Project Gallery** | [`gallery.html`](gallery.html) | Interactive filterable project gallery (All, Roofing, Custom Home Builds & Framing, Custom Decks, Seamless Gutters, Siding & Garages, Interior Remodeling) showcasing 21 authentic projects directly from CBT Construction's Facebook page, accompanied by a fullscreen Lightbox modal with next/prev controls, keyboard navigation, and instant quote triggers. |
+| **Contact & Estimate** | [`contact.html`](contact.html) | Justin Fry direct contact details, operating hours (Mon–Fri 8:00 AM – 6:00 PM, 24/7 emergency storm response), detailed county-by-county service coverage list, official Facebook link, and a robust interactive quote request form powered by Web3Forms & Pushover. |
 
 ---
 
-## 🔨 3. Verified Service Offerings & Scope
+## 🔨 3. Verified Service Offerings & Scope (Commercial & Residential)
 
-1. **Roofing Systems:**
+1. **Roofing Systems (Commercial & Residential):**
    * Asphalt architectural shingle installation & complete tear-off replacement.
-   * Standing seam and ribbed residential/agricultural metal roofing.
+   * Standing seam and ribbed residential, commercial, and agricultural metal roofing.
    * Continuous ridge vent cut & installations, emergency leak detection, rapid storm tarping, and flashing repairs.
    * Comprehensive hail and wind storm damage inspections with insurance claim documentation.
 
-2. **New Home Construction & Structural Framing:**
-   * Ground-up turnkey residential builds (e.g. Ricky Schopp custom residence in Effingham).
-   * Structural framing, timber-framed entry porticos, gable rooflines, and stone wainscoting facades.
-   * Complete tear-down and rebuild transformations.
+2. **Custom Home Builds, Commercial Construction & Structural Framing:**
+   * Ground-up turnkey custom residential home builds (e.g. Ricky Schopp custom residence in Effingham).
+   * Commercial construction, build-outs, and structural framing.
+   * Timber-framed entry porticos, gable rooflines, stone wainscoting facades, and complete tear-down rebuild transformations.
 
 3. **Outdoor Living & Custom Decks:**
    * High-end multi-tier composite decks (Trex) with black aluminum balusters, picture-framed fascia, and custom stairways.
    * Heavy-duty pressure-treated natural timber decks and lakeside walkouts.
 
-4. **Siding, Garages & Gutters:**
-   * Premium horizontal lap vinyl siding installations on homes and detached garages.
-   * Seamless aluminum K-style gutters with downspouts and snow guard roof protection.
+4. **Seamless Gutters, Siding & Garages:**
+   * Custom-measured seamless aluminum K-style rain gutters, oversized downspouts, leaf guards, and metal roof snow retention guards.
+   * Premium horizontal lap vinyl siding, soffit/fascia wrapping, and detached garage exterior upgrades.
 
 5. **Interior Remodeling & Finishing:**
    * Handcrafted distressed brick veneer dining room accent walls.
@@ -56,19 +56,16 @@ The site is built as a lightning-fast, 4-page responsive web experience:
 
 ---
 
-## ⚡ 4. Interactive Forms & Lead Dispatch Integration
+## ⚡ 4. Interactive Forms & Lead Dispatch Integration (Formspree + Pushover Email)
 
-The website features client-validated estimate forms with dual dispatch options:
+The website features client-validated estimate forms configured for **Formspree** forwarding directly to **Justin Fry's Pushover Email**:
 
-### 1. Formspree + Pushover Lead Forwarding
-* **Form Action:** Configured with placeholder `https://formspree.io/f/your-form-id`.
-* **Client Validation:** Full Name, Phone (10-digit validation), Property Location/Town, Service Category Dropdown, Timeline/Urgency, and Project Scope details.
-* **Instant Pushover Push Notification (`api/lead-webhook.js`):**
-  When a homeowner submits a request, the payload can be forwarded to Justin Fry's mobile phone via Pushover with high-priority siren notification, instantly linking to one-tap phone callback.
-* **To Activate Pushover on Justin's Phone:**
-  1. Create a free app token at [Pushover.net](https://pushover.net).
-  2. Set `PUSHOVER_USER_KEY` and `PUSHOVER_API_TOKEN` in your Vercel project environment variables.
-  3. Change the form action or Formspree Webhook endpoint to `/api/lead-webhook`.
+### 1. Formspree -> Pushover Email Lead Forwarding
+* **Shared Pushover Email Ready:** Since Justin Fry uses the same Pushover email for both of his businesses (Mr. Lube and CBT Construction), every form submission from this website automatically includes:
+  * `_subject`: `🔨 CBT CONSTRUCTION LEAD: <Service> — <Name> (<Town>)`
+  * `business`: `CBT Construction`
+  * A clean formatted summary block (`message`) with a clickable `tel:+1...` phone link so Justin immediately knows the alert is for **CBT Construction** when it pops up on his phone.
+* **Active Formspree Endpoint:** All 5 quote forms across the site are connected live to `https://formspree.io/f/mqppjnpd` in [`assets/js/main.js`](assets/js/main.js) and the HTML form `action` attributes.
 
 ### 2. Direct Mobile SMS Dispatch (`sms:+12172543091`)
 Every form includes a **"Send Directly via Mobile SMS"** button. When clicked on a phone or Mac, it opens the Messages app with Justin's cell number pre-filled with the exact project scope formatted cleanly:
@@ -112,6 +109,6 @@ This repository is 100% deployment-ready for Vercel:
 
 ## 🔍 6. SEO & Schema.org LocalBusiness Markup
 
-* Targeted local search terms: `Roofing Vandalia IL`, `Effingham IL contractor`, `Cowden IL roofer`, `stamped concrete Shelbyville IL`.
+* Targeted local search terms: `Custom Home Builder Effingham IL`, `Roofing Vandalia IL`, `Commercial & Residential Contractor Central IL`, `Cowden IL Roofer & Seamless Gutters`.
 * Complete Schema.org `LocalBusiness`, `RoofingContractor`, and `GeneralContractor` structured JSON-LD embedded on the home page.
 * Semantic HTML5 tags (`<main>`, `<section>`, `<nav>`, `<aside>`, `<header>`, `<footer>`, `<details>`).

@@ -1,6 +1,6 @@
 /**
  * CBT Construction - Main JavaScript Controller
- * Handles Navigation, Estimate Modal, Form Validation, Formspree & Pushover Integration,
+ * Handles Navigation, Estimate Modal, Form Validation, Formspree -> Pushover Email Integration,
  * Gallery Lightbox, Filter Tabs, and Before/After Comparison Sliders.
  */
 
@@ -109,8 +109,20 @@ function initEstimateModal() {
 }
 
 /* ==========================================================================
-   3. ESTIMATE & SERVICE ORDER FORM VALIDATION & INTEGRATION
+   3. ESTIMATE & SERVICE ORDER FORM VALIDATION & INTEGRATION (FORMSPREE -> PUSHOVER EMAIL)
    ========================================================================== */
+const LEAD_DISPATCH_CONFIG = {
+  // 1. Formspree Endpoint (https://formspree.io)
+  // Point your Formspree form's target email to Justin's Pushover Email (e.g., xyz@pomail.net).
+  // Paste your Formspree Form URL/ID below (e.g., 'https://formspree.io/f/xabcdefg')
+  // and it will automatically apply to all 5 quote forms across the website!
+  formspreeEndpoint: 'https://formspree.io/f/mqppjnpd',
+
+  // 2. Optional Serverless / Direct Pushover Webhook Fallback
+  pushoverWebhookEndpoint: '/api/lead-webhook',
+  contractorPhone: '2172543091'
+};
+
 function initEstimateForms() {
   const forms = document.querySelectorAll('.cbt-quote-form');
 
@@ -142,6 +154,7 @@ function getValidatedFormData(form) {
   const serviceInput = form.querySelector('[name="service_category"]');
   const timelineInput = form.querySelector('[name="timeline"]');
   const detailsInput = form.querySelector('[name="project_details"]');
+  const sourceInput = form.querySelector('[name="_source"]');
 
   const name = nameInput ? nameInput.value.trim() : '';
   const phone = phoneInput ? phoneInput.value.trim() : '';
@@ -150,6 +163,7 @@ function getValidatedFormData(form) {
   const service = serviceInput ? serviceInput.value : '';
   const timeline = timelineInput ? timelineInput.value : 'Flexible';
   const details = detailsInput ? detailsInput.value.trim() : '';
+  const source = sourceInput ? sourceInput.value : 'CBT Construction Website';
 
   // Basic Validation
   if (!name || name.length < 2) {
@@ -185,7 +199,8 @@ function getValidatedFormData(form) {
     address,
     service,
     timeline,
-    details: details || 'No additional details noted'
+    details: details || 'No additional details noted',
+    source
   };
 }
 
@@ -196,7 +211,7 @@ function handleSmsSubmission(form) {
   const data = getValidatedFormData(form);
   if (!data) return;
 
-  const contractorPhone = '2172543091';
+  const contractorPhone = LEAD_DISPATCH_CONFIG.contractorPhone;
   const messageBody = 
 `🔨 CBT CONSTRUCTION - QUOTE REQUEST
 ━━━━━━━━━━━━━━━━━━━━
@@ -218,7 +233,8 @@ Sent from CBT Construction Website`;
 }
 
 /**
- * Handles Formspree submission + Pushover forward guidance + visual success modal
+ * Dispatches lead via Formspree (which forwards directly to Justin's Pushover Email)
+ * Clearly tagged with "🔨 CBT CONSTRUCTION" so it stands out from his other business (Mr. Lube).
  */
 async function handleFormspreeSubmission(form) {
   const data = getValidatedFormData(form);
@@ -238,12 +254,31 @@ async function handleFormspreeSubmission(form) {
     `;
   }
 
-  const endpoint = form.getAttribute('action') || 'https://formspree.io/f/your-form-id';
+  // Use central LEAD_DISPATCH_CONFIG.formspreeEndpoint unless form action was specifically customized
+  const formAction = form.getAttribute('action') || '';
+  const endpoint =
+    (!LEAD_DISPATCH_CONFIG.formspreeEndpoint.includes('YOUR_FORMSPREE_ID'))
+      ? LEAD_DISPATCH_CONFIG.formspreeEndpoint
+      : formAction;
+
+  // Formatted message block for clean reading inside the Pushover app via Pushover Email
+  const pushoverFormattedSummary =
+`🚨 NEW CBT CONSTRUCTION LEAD!
+━━━━━━━━━━━━━━━━━━━━━
+🏢 Business: CBT Construction
+👤 Name: ${data.name}
+📞 Phone: ${data.phone} (tel:+1${data.phone.replace(/\D/g, '')})
+📍 Address: ${data.address}
+🏗️ Service: ${data.service}
+⏱️ Timeline: ${data.timeline}
+✉️ Email: ${data.email}
+📝 Details: ${data.details}
+📄 Form: ${data.source}`;
 
   try {
-    // If the endpoint is placeholder, simulate realistic high-converting feedback
-    if (endpoint.includes('your-form-id')) {
-      await new Promise(resolve => setTimeout(resolve, 800));
+    // If the Formspree ID hasn't been pasted in yet, run demo simulation + optional local webhook
+    if (!endpoint || endpoint.includes('YOUR_FORMSPREE_ID') || endpoint.includes('your-form-id')) {
+      await new Promise(resolve => setTimeout(resolve, 700));
       showSuccessModal(data);
       form.reset();
       return;
@@ -256,9 +291,18 @@ async function handleFormspreeSubmission(form) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        ...data,
-        _subject: `New Lead: ${data.service} - ${data.name} (${data.address})`,
-        _replyto: data.email !== 'Not provided' ? data.email : undefined
+        _subject: `🔨 CBT CONSTRUCTION LEAD: ${data.service} — ${data.name} (${data.address})`,
+        business: 'CBT Construction',
+        message: pushoverFormattedSummary,
+        full_name: data.name,
+        phone_number: data.phone,
+        email: data.email !== 'Not provided' ? data.email : undefined,
+        _replyto: data.email !== 'Not provided' ? data.email : undefined,
+        property_address: data.address,
+        service_category: data.service,
+        timeline: data.timeline,
+        project_details: data.details,
+        form_source: data.source
       })
     });
 
@@ -266,11 +310,10 @@ async function handleFormspreeSubmission(form) {
       showSuccessModal(data);
       form.reset();
     } else {
-      throw new Error('Form submission failed');
+      throw new Error('Formspree submission failed');
     }
   } catch (err) {
     console.error('Submission error:', err);
-    // Fallback gracefully to success modal with direct call instruction
     showSuccessModal(data, true);
   } finally {
     if (submitBtn) {
@@ -322,7 +365,7 @@ function showSuccessModal(data, hadError = false) {
         </div>
         <div class="flex justify-between">
           <span class="text-slate-400">Owner Status:</span>
-          <span class="font-semibold text-emerald-400">Dispatched via Pushover & Email</span>
+          <span class="font-semibold text-emerald-400">Dispatched via Formspree & Pushover</span>
         </div>
       </div>
 

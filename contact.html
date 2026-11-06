@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact & Estimate | CBT Construction - Justin Fry (217) 254-3091</title>
-  <meta name="description" content="Request a free on-site estimate or storm damage inspection from Justin Fry at CBT Construction. Serving Cowden, Vandalia, Effingham, and Central Illinois. Call (217) 254-3091.">
-  <meta name="keywords" content="contact CBT Construction, Justin Fry phone, roofing quote Vandalia IL, contractor Cowden IL, concrete estimate Effingham, Central IL contractor">
+  <meta name="description" content="Request a free on-site estimate for custom home builds, commercial or residential roofing, seamless gutters, or remodeling from Justin Fry at CBT Construction. Serving Cowden, Vandalia, Effingham, and Central Illinois. Call (217) 254-3091.">
+  <meta name="keywords" content="contact CBT Construction, Justin Fry phone, custom home builder Effingham, roofing quote Vandalia IL, commercial and residential contractor Cowden IL, seamless gutters Central IL">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -143,13 +143,13 @@
         </nav>
         <div class="max-w-3xl">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
-            Fast Response Guarantee
+            Commercial & Residential • Fast Response Guarantee
           </div>
           <h1 class="text-3xl sm:text-5xl font-black text-white font-heading tracking-tight">
             Contact CBT Construction
           </h1>
           <p class="text-slate-300 text-base sm:text-lg mt-3 leading-relaxed">
-            Ready to replace your roof, pour a stamped concrete patio, build a custom deck, or add a room? Speak directly with owner Justin Fry for honest pricing and dependable scheduling.
+            Ready to build a custom home, replace a commercial or residential roof, install seamless gutters, build a custom deck, or remodel? Speak directly with owner Justin Fry for honest pricing and dependable scheduling.
           </p>
         </div>
       </div>
@@ -296,9 +296,12 @@
                 </div>
               </div>
 
-              <!-- The Form -->
-              <form class="cbt-quote-form space-y-4" action="https://formspree.io/f/your-form-id" method="POST">
+              <!-- The Form (Formspree -> Pushover Email) -->
+              <form class="cbt-quote-form space-y-4" action="https://formspree.io/f/mqppjnpd" method="POST">
+                <input type="hidden" name="business" value="CBT Construction">
+                <input type="hidden" name="_subject" value="🔨 CBT Construction Quote Request (Contact Page)">
                 <input type="hidden" name="_source" value="Contact Page Main Form">
+                <input type="text" name="_gotcha" class="hidden" style="display: none;">
 
                 <!-- Full Name -->
                 <div>
@@ -340,13 +343,15 @@
                     </label>
                     <select name="service_category" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white transition">
                       <option value="" disabled selected>Select category...</option>
+                      <option value="Custom Home Build">Home Builds: Turnkey Custom Home Construction</option>
+                      <option value="Commercial Construction & Roofing">Commercial: Construction, Roofing & Build-Outs</option>
                       <option value="Roofing Repair/Replacement">Roofing: Asphalt Shingle Replacement</option>
-                      <option value="Metal Roofing">Roofing: Standing Seam Metal Roof</option>
+                      <option value="Metal Roofing">Roofing: Standing Seam / Ribbed Metal Roof</option>
                       <option value="Storm Damage / Leak Repair">Roofing: Storm Damage / Leak Repair</option>
-                      <option value="New Home Construction">New Construction: Turnkey Home Build</option>
-                      <option value="Structural Framing & Additions">Framing: Load-Bearing & Additions</option>
+                      <option value="Seamless Gutters & Guards">Gutters: Seamless Gutters, Downspouts & Leaf Guards</option>
+                      <option value="Structural Framing & Additions">Framing: Load-Bearing & Room Additions</option>
                       <option value="Deck Building">Outdoor Living: Custom Composite / Wood Deck</option>
-                      <option value="Siding & Garages">Exterior: Siding, Garages & Gutters</option>
+                      <option value="Siding & Garages">Exterior: Vinyl Siding & Detached Garages</option>
                       <option value="Interior Remodeling">Interior: Remodeling, Drywall & Odd Jobs</option>
                     </select>
                   </div>
@@ -369,16 +374,16 @@
                   <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
                     Project Details / Scope Description
                   </label>
-                  <textarea name="project_details" rows="4" placeholder="Describe the size of your roof, dimensions of concrete patio/driveway, deck materials, room addition square footage, or any specific challenges..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 transition"></textarea>
+                  <textarea name="project_details" rows="4" placeholder="Describe your custom home build, commercial or residential roof size, seamless gutter run, deck materials, room addition square footage, or any specific goals..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 transition"></textarea>
                 </div>
 
-                <!-- Backend / Pushover notice -->
+                <!-- Backend / Formspree & Pushover Email notice -->
                 <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-700/60 text-[11px] text-slate-400 flex items-start gap-2">
                   <svg class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                   </svg>
                   <span>
-                    Your inquiry is protected by 256-bit encryption. Submissions are instantly routed to Justin Fry's mobile phone via Pushover push alert and email dispatch.
+                    Your inquiry is protected by 256-bit encryption. Submissions are instantly routed via <strong>Formspree</strong> to Justin Fry's <strong>Pushover mobile alert email</strong>.
                   </span>
                 </div>
 
@@ -452,13 +457,13 @@
         <div class="space-y-3">
           <h4 class="text-white font-bold font-heading text-sm uppercase tracking-wider">Services</h4>
           <ul class="space-y-2 text-xs">
-            <li><a href="services.html#roofing" class="hover:text-amber-400 transition">Asphalt Shingle Roofing</a></li>
-            <li><a href="services.html#roofing" class="hover:text-amber-400 transition">Metal Roofing Systems</a></li>
-            <li><a href="services.html#concrete" class="hover:text-amber-400 transition">Poured Concrete Flatwork</a></li>
-            <li><a href="services.html#concrete" class="hover:text-amber-400 transition">Decorative Stamped Concrete</a></li>
-            <li><a href="services.html#decks" class="hover:text-amber-400 transition">Custom Composite Decks</a></li>
-            <li><a href="services.html#additions" class="hover:text-amber-400 transition">Home Additions & Remodels</a></li>
-            <li><a href="services.html#additions" class="hover:text-amber-400 transition">Wood-Look Tile Flooring</a></li>
+            <li><a href="services.html#new-construction" class="hover:text-amber-400 transition">Custom Home Builds</a></li>
+            <li><a href="services.html#new-construction" class="hover:text-amber-400 transition">Commercial & Residential Construction</a></li>
+            <li><a href="services.html#roofing" class="hover:text-amber-400 transition">Asphalt Shingle & Metal Roofing</a></li>
+            <li><a href="services.html#remodeling" class="hover:text-amber-400 transition">Seamless Gutters & Leaf Guards</a></li>
+            <li><a href="services.html#decks" class="hover:text-amber-400 transition">Custom Composite & Wood Decks</a></li>
+            <li><a href="services.html#remodeling" class="hover:text-amber-400 transition">Vinyl Siding & Garage Upgrades</a></li>
+            <li><a href="services.html#interior" class="hover:text-amber-400 transition">Interior Remodeling & Additions</a></li>
           </ul>
         </div>
 
