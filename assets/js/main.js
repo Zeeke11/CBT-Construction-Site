@@ -67,6 +67,11 @@ function initEstimateModal() {
   const serviceSelect = modal.querySelector('select[name="service_category"]');
 
   function openModal(preselectedService = null) {
+    // Close gallery lightbox if open behind the estimate modal
+    const lightbox = document.getElementById('gallery-lightbox');
+    if (lightbox && lightbox.classList.contains('active-lightbox')) {
+      closeLightbox();
+    }
     if (preselectedService && serviceSelect) {
       serviceSelect.value = preselectedService;
     }
@@ -483,6 +488,7 @@ function renderLightboxContent() {
   const titleEl = document.getElementById('lightbox-title');
   const catEl = document.getElementById('lightbox-category');
   const locEl = document.getElementById('lightbox-location');
+  const descEl = document.getElementById('lightbox-desc');
   const countEl = document.getElementById('lightbox-counter');
 
   if (imgEl) {
@@ -492,6 +498,7 @@ function renderLightboxContent() {
   if (titleEl) titleEl.textContent = item.title;
   if (catEl) catEl.textContent = item.category;
   if (locEl) locEl.textContent = item.location;
+  if (descEl) descEl.textContent = item.desc || '';
   if (countEl) countEl.textContent = `${currentLightboxIndex + 1} / ${galleryItems.length}`;
 }
 

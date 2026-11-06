@@ -986,7 +986,7 @@
       <!-- Top Bar: Counter & Close -->
       <div class="w-full flex items-center justify-between pb-4 text-white">
         <div class="flex items-center gap-3">
-          <span id="lightbox-counter" class="text-xs font-mono font-bold text-amber-400 bg-slate-900 px-3 py-1 rounded-full border border-slate-700">1 / 8</span>
+          <span id="lightbox-counter" class="text-xs font-mono font-bold text-amber-400 bg-slate-900 px-3 py-1 rounded-full border border-slate-700">1 / 21</span>
           <span id="lightbox-category" class="text-xs uppercase tracking-wider text-slate-300 font-semibold bg-slate-800 px-2.5 py-0.5 rounded">Roofing</span>
         </div>
         <button id="lightbox-close" class="p-2 rounded-xl bg-slate-900 text-slate-400 hover:text-white border border-slate-700 transition" aria-label="Close lightbox">
@@ -1017,11 +1017,15 @@
 
       <!-- Caption & Instant Action Trigger -->
       <div class="w-full mt-4 flex flex-col sm:flex-row items-center justify-between gap-4 bg-slate-900/90 border border-slate-800 rounded-xl p-4">
-        <div>
-          <h4 id="lightbox-title" class="text-base font-bold text-white font-heading">Project Title</h4>
-          <p id="lightbox-location" class="text-xs text-amber-400 font-medium">Location</p>
+        <div class="text-left">
+          <div class="flex items-center gap-2">
+            <h4 id="lightbox-title" class="text-base font-bold text-white font-heading">Project Title</h4>
+            <span class="text-slate-600">•</span>
+            <p id="lightbox-location" class="text-xs text-amber-400 font-medium">Location</p>
+          </div>
+          <p id="lightbox-desc" class="text-xs text-slate-300 mt-1 leading-relaxed"></p>
         </div>
-        <button class="open-estimate-modal bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs transition flex items-center gap-2 shrink-0">
+        <button class="open-estimate-modal bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs transition flex items-center gap-2 shrink-0 cursor-pointer">
           <span>Get Quote for Project Like This</span>
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
